@@ -1,0 +1,20 @@
+.example-list-wrapping {
+  max-width: 500px;
+
+}
+.container-footer{
+  background-color: #1a1b1b;
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+  a{
+    color: white !important;
+    text-decoration: none;
+  }
+}
+

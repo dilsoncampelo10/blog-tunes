@@ -4,5 +4,5 @@ export type PostType = {
     title: string,
     description ?: string,
     date: string,
-    autor: string
+    author: string
 }
