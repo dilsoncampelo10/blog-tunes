@@ -1,0 +1,31 @@
+.main-section-container{
+    background-size: contain;
+    background-image: url('../../../../../assets/images/wallpaperForest.jpg');
+    padding: 13% 0;
+}
+
+.blog-tunes-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.main-title{
+    font-size: 12rem;
+    font-family: 'ToonyLineFill';
+
+    letter-spacing: 1rem;
+    color: white;
+    border-radius: 30px;
+    font-weight: 100;
+    text-shadow: 16px 2px 15px black;
+    -webkit-text-stroke-width: 10px;
+    -webkit-text-stroke-color: #000
+}
+.second-title{
+  font-family: 'GREENFOOD';
+  font-size: 3rem;
+  color: white;
+  text-shadow: 6px 5px 5px black;
+}

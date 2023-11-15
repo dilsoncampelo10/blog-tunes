@@ -45,6 +45,11 @@ $angular-blog-theme: mat.define-light-theme((color: (primary: $angular-blog-prim
   src: url('./assets/fonts/ToonyLineFill_PERSONAL_USE_ONLY.otf');
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html,
 body {
   height: 100%;
