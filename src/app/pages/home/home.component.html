@@ -3,11 +3,11 @@
         <app-main-section></app-main-section>
     </main>
     <aside>
-        <h1>Blog</h1>
+        <h1 class="title-blog">Blog</h1>
         <div class="blog-card_container">
-            <app-blog-card></app-blog-card>
-            <app-blog-card></app-blog-card>
-            <app-blog-card></app-blog-card>
+
+            <app-blog-card image="{{post.image}}" title="{{post.title}}" date="{{post.date}}" *ngFor="let post of posts"></app-blog-card>
+
         </div>
     </aside>
 </section>

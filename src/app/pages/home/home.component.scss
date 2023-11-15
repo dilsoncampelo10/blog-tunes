@@ -4,5 +4,14 @@
 .blog-card_container{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 40px;
+  max-width: 1280px;
+  margin: auto;
+}
+aside > h1{
+  font-family: 'ToonyLine';
+  letter-spacing: 5px;
+  font-size: 3rem;
+  margin-top: 30px;
 }

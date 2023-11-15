@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-blog-card',
@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class BlogCardComponent {
 
+  @Input()
+  image: string = '';
+  @Input()
+  authorName:string = 'Anônimo';
+  @Input()
+  description: string = '';
+  @Input()
+  title:string = '';
+  @Input()
+  date: string = '';
+  @Input()
+  autor: string = '';
 }
