@@ -8,6 +8,8 @@ import { Component, Input } from '@angular/core';
 export class BlogCardComponent {
 
   @Input()
+  id = 0;
+  @Input()
   image: string = '';
   @Input()
   authorName:string = 'Anônimo';

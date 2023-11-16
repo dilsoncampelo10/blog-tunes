@@ -13,6 +13,6 @@
     </mat-card-content>
     <mat-card-actions>
         <small>{{date}}</small>
-        <button mat-button>Ver mais</button>
+        <a [routerLink]="['/post/show',id]"   mat-button>Ver mais</a>
     </mat-card-actions>
 </mat-card>
