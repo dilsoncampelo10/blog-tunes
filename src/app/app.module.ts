@@ -8,12 +8,12 @@ import { NavbarModule } from './components/navbar/navbar.module';
 import { HomeModule } from './pages/home/home.module';
 import { FooterModule } from './components/footer/footer.module';
 import { ShowComponent } from './pages/posts/show/show.component';
+import { ShowPostModule } from './pages/posts/show/show-post.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ShowComponent,
 
   ],
   imports: [
@@ -22,7 +22,8 @@ import { ShowComponent } from './pages/posts/show/show.component';
     BrowserAnimationsModule,
     NavbarModule,
     FooterModule,
-    HomeModule
+    HomeModule,
+    ShowPostModule
   ],
   providers: [],
   bootstrap: [AppComponent]

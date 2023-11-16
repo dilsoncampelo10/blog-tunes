@@ -1,0 +1,39 @@
+.container{
+  min-height: 100vh;
+}
+.example-card {
+  max-width: 800px;
+  margin-bottom: 8px;
+  flex: 2;
+
+  .title{
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: 'GREENFOOD';
+  }
+  img{
+    width: 50%;
+    height: auto;
+  }
+  .content{
+    margin-top: 40px;
+  }
+}
+
+.main-post{
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+
+
+}
+.btn-back{
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}

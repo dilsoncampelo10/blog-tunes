@@ -15,6 +15,6 @@ export class HomeComponent implements OnInit{
 
     posts: PostType[]= data;
     ngOnInit(): void {
-      console.log(this.posts)
+  
     }
 }
