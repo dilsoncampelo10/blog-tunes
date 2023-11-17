@@ -9,6 +9,8 @@ import { HomeModule } from './pages/home/home.module';
 import { FooterModule } from './components/footer/footer.module';
 import { ShowPostModule } from './pages/posts/show-post/show-post.module';
 import { CreatePostModule } from './pages/posts/create-post/create-post.module';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -27,7 +29,9 @@ import { CreatePostModule } from './pages/posts/create-post/create-post.module';
     FooterModule,
     HomeModule,
     ShowPostModule,
-    CreatePostModule
+    CreatePostModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
