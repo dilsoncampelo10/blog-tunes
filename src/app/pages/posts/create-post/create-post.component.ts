@@ -1,5 +1,6 @@
+import { PostService } from './../../../services/post.service';
 import { Component } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { Post } from 'src/app/models/Post';
 
 @Component({
   selector: 'app-create-blog',
@@ -8,4 +9,14 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class CreatePostComponent {
 
+  constructor(private postSerivce: PostService){}
+  post : Post = new Post();
+
+  create(): void{
+    this.postSerivce.create(this.post)
+    .subscribe({
+      next: response => {console.log("Adicionado")},
+      error: err => {console.log("Erro")}
+    })
+  }
 }

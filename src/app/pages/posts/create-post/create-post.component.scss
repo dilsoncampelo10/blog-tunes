@@ -13,6 +13,18 @@
   }
 
 }
+.container--inputs{
+    display: flex;
+    flex-direction: column;
+
+    label{
+      margin-bottom: 10px;
+    }
+
+    input:focus, textarea:focus{
+      box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.582);
+    }
+}
 .form-control{
   min-width: 500px;
   max-width: 700px;
@@ -25,6 +37,8 @@
   font-size: 18px;
   letter-spacing: 3px;
   resize: vertical;
+
+
 }
 
 @media(max-width:425px){
