@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { ShowComponent } from './pages/posts/show/show.component';
+import { ShowPostComponent } from './pages/posts/show-post/show-post.component';
+import { CreatePostComponent } from './pages/posts/create-post/create-post.component';
 
 const routes: Routes = [
   {
@@ -10,7 +11,11 @@ const routes: Routes = [
   },
   {
     path:'post/show/:id',
-    component:ShowComponent
+    component:ShowPostComponent
+  },
+  {
+    path:'post/create',
+    component:CreatePostComponent
   }
 ];
 

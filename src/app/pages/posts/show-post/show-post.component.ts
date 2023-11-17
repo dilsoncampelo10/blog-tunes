@@ -5,10 +5,10 @@ import { PostType } from 'src/types/PostType';
 
 @Component({
   selector: 'app-show-post',
-  templateUrl: './show.component.html',
-  styleUrls: ['./show.component.scss']
+  templateUrl: './show-post.component.html',
+  styleUrls: ['./show-post.component.scss']
 })
-export class ShowComponent implements OnInit{
+export class ShowPostComponent implements OnInit{
 
   id: string | null= "";
   image: string = "";

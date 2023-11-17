@@ -1,0 +1,28 @@
+
+.container{
+  height: 100vh;
+}
+.container_post{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1{
+    margin: 50px 0;
+  }
+
+}
+.form-control{
+  min-width: 500px;
+  max-width: 700px;
+  margin-bottom: 20px;
+  padding: 15px 5px;
+  outline: 0;
+  border: 0;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.582);
+  font-family: 'ToonyLineFill';
+  font-size: 18px;
+  letter-spacing: 3px;
+  resize: vertical;
+}

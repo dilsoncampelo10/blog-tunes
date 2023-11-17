@@ -7,8 +7,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarModule } from './components/navbar/navbar.module';
 import { HomeModule } from './pages/home/home.module';
 import { FooterModule } from './components/footer/footer.module';
-import { ShowComponent } from './pages/posts/show/show.component';
-import { ShowPostModule } from './pages/posts/show/show-post.module';
+import { ShowPostModule } from './pages/posts/show-post/show-post.module';
+import { CreatePostModule } from './pages/posts/create-post/create-post.module';
+
+
+
 
 
 @NgModule({
@@ -23,7 +26,8 @@ import { ShowPostModule } from './pages/posts/show/show-post.module';
     NavbarModule,
     FooterModule,
     HomeModule,
-    ShowPostModule
+    ShowPostModule,
+    CreatePostModule
   ],
   providers: [],
   bootstrap: [AppComponent]
