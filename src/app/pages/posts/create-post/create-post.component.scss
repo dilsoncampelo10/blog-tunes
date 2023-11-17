@@ -26,3 +26,9 @@
   letter-spacing: 3px;
   resize: vertical;
 }
+
+@media(max-width:425px){
+  .form-control{
+    min-width: 100%;
+  }
+}

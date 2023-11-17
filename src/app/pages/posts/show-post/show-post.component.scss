@@ -37,3 +37,17 @@
     color: black;
   }
 }
+@media(max-width:425px){
+  .mat-mdc-card-title-group{
+    flex-direction: column-reverse;
+  }
+}
+.example-card {
+  .title{
+    margin-top: 30px;
+    font-size: 4rem;
+  }
+  img{
+    width: 100%;
+  }
+}
