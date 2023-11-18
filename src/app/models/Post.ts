@@ -1,5 +1,5 @@
 export class Post {
-    id: string = "";
+    id: string | null = "";
     title: string = "";
     description: string = "";
     image: string = "";

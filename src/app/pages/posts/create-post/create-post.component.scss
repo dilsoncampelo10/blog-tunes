@@ -10,6 +10,11 @@
 
   h1{
     margin: 50px 0;
+    font-size:3rem;
+    font-family: 'ToonyLineFill';
+    letter-spacing: 5px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red
   }
 
 }
@@ -25,6 +30,24 @@
       box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.582);
     }
 }
+.alert{
+
+  padding: 20px 60px;
+  border-radius: 15px;
+  width: 500px;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+.success{
+  background-color: rgb(113, 255, 113);
+  box-shadow: 3px 3px 3px rgb(16, 104, 16);
+}
+.failed{
+  background-color: rgb(240, 66, 43);
+  box-shadow: 3px 3px 3px rgb(104, 16, 16);
+  color: white;
+}
 .form-control{
   min-width: 500px;
   max-width: 700px;
@@ -33,7 +56,7 @@
   outline: 0;
   border: 0;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.582);
-  font-family: 'ToonyLineFill';
+
   font-size: 18px;
   letter-spacing: 3px;
   resize: vertical;

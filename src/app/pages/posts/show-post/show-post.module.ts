@@ -11,6 +11,9 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     MatCardModule,
     MatIconModule,
     AppRoutingModule
+  ],
+  exports: [
+    ShowPostComponent
   ]
 })
 export class ShowPostModule { }

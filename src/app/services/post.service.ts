@@ -12,6 +12,14 @@ constructor(private request: HttpClient) { }
 
   private baseURL: string = "http://localhost:8080/posts";
 
+  findAll():Observable<Post[]>{
+      return this.request.get<Post[]>(this.baseURL);
+  }
+
+  findById(id: string | null):Observable<Post>{
+      return this.request.get<Post>(`${this.baseURL}/${id}`);
+  }
+
   create(obj:Post):Observable<Post>{
       return this.request.post<Post>(this.baseURL, obj)
   }

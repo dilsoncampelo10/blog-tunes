@@ -3,15 +3,15 @@
     <mat-card class="example-card">
       <mat-card-header>
         <mat-card-title-group>
-          <img mat-card-md-image src="{{image}}"  alt="Image of a Shiba Inu">
-          <mat-card-title class="title">{{title}}</mat-card-title>
-          <mat-card-subtitle>{{author}}</mat-card-subtitle>
-          <mat-card-subtitle>{{date}}</mat-card-subtitle>
+          <img mat-card-md-image src="{{post.image}}"  alt="Image of a Shiba Inu">
+          <mat-card-title class="title">{{post.title}}</mat-card-title>
+          <mat-card-subtitle>"Anônimo"</mat-card-subtitle>
+          <mat-card-subtitle>{{post.date | date:'d/M/Y'}}</mat-card-subtitle>
 
         </mat-card-title-group>
       </mat-card-header>
       <mat-card-content class="content">
-        {{description}}
+        {{post.description}}
       </mat-card-content>
     </mat-card>
 

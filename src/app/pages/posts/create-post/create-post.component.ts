@@ -11,12 +11,16 @@ export class CreatePostComponent {
 
   constructor(private postSerivce: PostService){}
   post : Post = new Post();
+  success : boolean = false;
+  failed: boolean = false;
 
   create(): void{
     this.postSerivce.create(this.post)
     .subscribe({
-      next: response => {console.log("Adicionado")},
-      error: err => {console.log("Erro")}
+      next: response => this.success = true,
+      error: err => this.failed = true
     })
+
+    this.post = new Post();
   }
 }

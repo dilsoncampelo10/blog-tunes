@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { data } from 'src/data/dataFaker';
-import { PostType } from 'src/types/PostType';
+import { Post } from 'src/app/models/Post';
+import { PostService } from 'src/app/services/post.service';
+
 
 @Component({
   selector: 'app-show-post',
@@ -10,35 +11,24 @@ import { PostType } from 'src/types/PostType';
 })
 export class ShowPostComponent implements OnInit{
 
-  id: string | null= "";
-  image: string = "";
-  title: string = "";
-  description : string | undefined ="";
-  date: string = "";
-  author: string = "";
+  post: Post = new Post();
 
-  constructor(private activeRouter: ActivatedRoute){
-      this.activeRouter.paramMap.subscribe(value => this.id = value.get('id'))
+  constructor(private activeRouter: ActivatedRoute, private postService: PostService){
+      this.activeRouter.paramMap.subscribe(value => this.post.id = value.get('id'));
 
   }
 
   ngOnInit(): void {
-    this.setValuesToPost(this.id)
+    this.findById(this.post.id);
   }
 
-  setValuesToPost(id: string | null):void{
-    const result: PostType[] = data.filter(post => post.id == this.id);
-
-    if(result){
-      this.mountPost(result);
-    }
+  findById(id:string | null): void{
+      this.postService.findById(id)
+      .subscribe({
+        next: response => this.post = response,
+        error: err => console.log(err)
+      });
   }
 
-  mountPost(result:PostType[]):void{
-    this.title = result[0].title;
-    this.description = result[0].description;
-    this.image = result[0].image;
-    this.date = result[0].date;
-    this.author = result[0].author;
-  }
+
 }

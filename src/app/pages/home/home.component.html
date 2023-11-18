@@ -11,7 +11,7 @@
         </a>
         <div class="blog-card_container">
 
-            <app-blog-card id="{{post.id}}" image="{{post.image}}" authorName="{{post.author}}" title="{{post.title}}" date="{{post.date}}" *ngFor="let post of posts"></app-blog-card>
+            <app-blog-card id="{{post.id}}" image="{{post.image}}" authorName="Anônimo" title="{{post.title}}" date="{{post.date | date:'d/M/Y'}}" *ngFor="let post of posts"></app-blog-card>
 
         </div>
     </aside>
